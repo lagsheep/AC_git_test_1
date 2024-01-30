@@ -1,0 +1,105 @@
+using System;
+
+namespace AC_masiivs
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("1. uzdevums");
+            Random r = new Random();
+
+            int nepara = 0;
+            int para = 0;
+            int summa = 0;
+            int[] A = new int[10];
+            for (int i = 0; i < 10; i++)
+            {
+                A[i] = r.Next(2, 9);
+               
+
+                summa = summa + A[i];
+                
+
+                if ((i % 2) == 0)    
+                {
+                    para = para + A[i];
+
+                }
+                if (A[i] % 2 !=0)
+                {
+                        nepara = nepara + A[i];
+                    
+                }
+                Console.WriteLine(A[i]);
+                
+
+
+            }
+
+        
+
+                Console.WriteLine("masīva summa: " + summa);
+            
+            Console.WriteLine("masīva para indeksu vertibu summa: " + para);
+            
+            Console.WriteLine("masiva nepara skaitlu summa: " +nepara);
+
+            Console.WriteLine("");
+            Console.WriteLine("2. uzdevums");
+            Console.WriteLine("");
+
+
+            int[] B = new int[100];
+            for (int u = 0; u < 100; u++)
+            {
+                B[u] = 100 - u;
+                Console.WriteLine("B:" +B[u]);
+
+            }
+
+
+            Console.WriteLine("");
+            Console.WriteLine("3. uzdevums");
+            Console.WriteLine("");
+
+            int[] C = new int[5];
+            int[] D = new int[5];
+            int[] E = new int[5];
+
+            for (int x = 0; x < 5; x++)
+            {
+               C[x] = x + 1;
+               Console.WriteLine("C:" + C[x]);
+               Console.WriteLine("");
+            }
+
+            Console.WriteLine("");
+
+            for (int x = 0; x < 5; x++)
+            {
+               D[x] = x + 3;
+               Console.WriteLine("D:" + D[x]);
+               Console.WriteLine("");
+            }
+
+            for (int x = 0; x < 5; x++)
+            {
+                Console.WriteLine("");
+                E[x] = C[x] + D[x];
+                Console.WriteLine("E:" + E[x]);
+            }
+
+
+
+
+
+
+
+
+
+
+
+        }
+    }
+}
