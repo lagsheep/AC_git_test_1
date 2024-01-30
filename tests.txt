@@ -59,39 +59,7 @@ namespace AC_masiivs
             }
 
 
-            Console.WriteLine("");
-            Console.WriteLine("3. uzdevums");
-            Console.WriteLine("");
-
-            int[] C = new int[5];
-            int[] D = new int[5];
-            int[] E = new int[5];
-
-            for (int x = 0; x < 5; x++)
-            {
-               C[x] = x + 1;
-               Console.WriteLine("C:" + C[x]);
-               Console.WriteLine("");
-            }
-
-            Console.WriteLine("");
-
-            for (int x = 0; x < 5; x++)
-            {
-               D[x] = x + 3;
-               Console.WriteLine("D:" + D[x]);
-               Console.WriteLine("");
-            }
-
-            for (int x = 0; x < 5; x++)
-            {
-                Console.WriteLine("");
-                E[x] = C[x] + D[x];
-                Console.WriteLine("E:" + E[x]);
-            }
-
-
-
+           
 
 
 
